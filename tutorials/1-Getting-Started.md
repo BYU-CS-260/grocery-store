@@ -10,8 +10,7 @@ Assuming you have that done, you can create a new Vue CLI project. These instruc
 vue create grocery-store
 ```
 
-Be sure to select **Manually select features** and choose **Router**. For all other
-choices you can use the default. **If you are having trouble selecting the options you can run "winpty vue.cmd create grocery-store" for interactive feature selection.**
+Be sure to select **Manually select features** and choose **Router**. If there is an option to "choose a version of Vue.js that you want to start the project with" be sure to select v.2.  For all other choices you can use the default. **If you are having trouble selecting the options you can run "winpty vue.cmd create grocery-store" for interactive feature selection.**
 
 This will create everything needed for this project in a directory called `grocery-store`.
 If you are in your GitHub classroom repo, this will look like:
