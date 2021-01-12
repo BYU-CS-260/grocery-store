@@ -41,7 +41,7 @@ We also need to modify the computed property so that it does the searching for u
 ```
 computed: {
   products() {
-    return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+    return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
   }
 ```
 
