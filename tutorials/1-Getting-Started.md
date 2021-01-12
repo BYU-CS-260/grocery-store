@@ -4,14 +4,13 @@ To begin this lab, you should already have Node.js and the Vue CLI installed. If
 you have not already done that, see [Learning the Vue
 CLI](https://github.com/BYU-CS-260/learning-vue-cli).
 
-Assuming you have that done, you can create a new Vue CLI project:
+Assuming you have that done, you can create a new Vue CLI project. These instructions also assume you are working in the directory where you have cloned this lab.
 
 ```
 vue create grocery-store
 ```
 
-Be sure to select **Manually select features** and choose **Router**. For all other
-choices you can use the default.
+Be sure to select **Manually select features** and choose **Router**. If there is an option to "choose a version of Vue.js that you want to start the project with" be sure to select v.2.  For all other choices you can use the default. **If you are having trouble selecting the options you can run "winpty vue.cmd create grocery-store" for interactive feature selection.**
 
 This will create everything needed for this project in a directory called `grocery-store`.
 If you are in your GitHub classroom repo, this will look like:

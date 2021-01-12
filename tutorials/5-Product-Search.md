@@ -25,7 +25,7 @@ This is the same as before, but with an added `div` with a `wrapper` class. Insi
 of that div is a form that includes an input for searching. We are using
 CSS classes from [Pure CSS](https://purecss.io/) to style this.
 
-We also need to modify the JavaScript for his component so that data portion
+We also need to modify the JavaScript for this component so that data portion
 has a `searchText` property. This is bound to the input used for the search box:
 
 ```
@@ -41,7 +41,7 @@ We also need to modify the computed property so that it does the searching for u
 ```
 computed: {
   products() {
-    return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+    return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
   }
 ```
 
