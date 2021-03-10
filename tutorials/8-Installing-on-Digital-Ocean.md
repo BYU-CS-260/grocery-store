@@ -157,3 +157,6 @@ Everything should be setup. You should be able to browse to your site, e.g `moth
 ## Debugging
 
 If your site is not working, you should (1) look at the JavaScript console, (2) look at the Network tab in Developer Tools, (3) look at Vue state in Vue Developer Tools.
+
+## Updating your site
+Running "npm run build" creates a production folder for your website in the dist folder. This is what is moved to the var/www/motherearth.domainname.com.  Nothing on the home directory will show on your websites but anything inside the var/www/motherearth.mydomain.com will.  Having a production version allows the code to be more organized but any changes made to the original files will need to be reapplied by running build again and copying the dist folder over again.
