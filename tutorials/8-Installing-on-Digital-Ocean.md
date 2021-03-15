@@ -140,15 +140,19 @@ Build your code by using:
 npm run build
 ```
 
-This will create an entire copy of your website front end in the `dist/` directory.
+This compiles all of your front end files -- some of which mix HTML, CSS, and JavaScript -- into separate HTML, CSS and JavaScript files that are compatible with most browsers. All of these files will be placed in a folder called `dist`. Likewise all files in `public` will be placed in `dist`. 
+
+When you are done with this command, the `dist` directory will contain all of the front-end code for your site. 
 
 ## Setup your website
 
-Now copy your public files to `/var/www`. For example:
+Now copy your the `dist` directory to `/var/www`. For example:
 
 ```
 cp -rp dist/* /var/www/motherearth.mydomain.com/
 ```
+
+This is just like what you have done previously, when you wrote your own HTML, CSS, and JavaSript files, except this time these files are compiled from Vue files.
 
 ## Testing
 
@@ -159,4 +163,5 @@ Everything should be setup. You should be able to browse to your site, e.g `moth
 If your site is not working, you should (1) look at the JavaScript console, (2) look at the Network tab in Developer Tools, (3) look at Vue state in Vue Developer Tools.
 
 ## Updating your site
-Running "npm run build" creates a production folder for your website in the dist folder. This is what is moved to the var/www/motherearth.domainname.com.  Nothing on the home directory will show on your websites but anything inside the var/www/motherearth.mydomain.com will.  Having a production version allows the code to be more organized but any changes made to the original files will need to be reapplied by running build again and copying the dist folder over again.
+
+If you want to update your site, then you shoudld (a) develop and test those changes on your laptop, (b) commit and push the new code to GitHub, (c) login to your server and pull in the changes with `git pull`, (d) run `npm run build` again, and then (e) use the `cp` command listed above to copy the files to `var/www` again. Separating your development environment from a production site enables you to properly test and commit your code before it goes "live". This practice is especially helpful when you are working on a team and when you are working in industry. 
