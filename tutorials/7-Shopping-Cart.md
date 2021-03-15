@@ -11,7 +11,7 @@ users need to add the same product more than once in order to buy multiples.
   <details><summary>click for more tips</summary>
  
   * Since the "Add to Cart" button is in ProductList, you want to work there. 
-  * Use a Vue "@click" directive to add an event handler to the "Add to Cart" button. This event handler is a function, listed in the `methods` section for ProductList, that takes a product as a parameter and adds it to the global cart array.
+  * Review previous code we have written if you don't remember how to run a function when a button is clicked.
   * Remember that the cart array is already part of the global data. Look for examples in the code of accessing products to see how to access cart.
 
 </details>
@@ -23,8 +23,8 @@ want to use a computed property in App.vue to do this.
   <details><summary>click for more tips</summary>
  
   * Since the menu is in App.vue, you want to work there. 
-  * You will need to add a "script" section to this component since it doesn't have one already. Use a computed property to get the number of items in the cart. You can calculate this using the length of the array. 
-  * Once you have a computed property, e.g. "numberOfItems()", then you can modify the `template` section in this component to use this property like you would any other property. e.g. {{ numberOfItems }}
+  * You will need to add a "script" section to this component since it doesn't have one already.
+  * The number of items in the cart is currently hard-coded. How would you replace this with a calculation that uses the length of the cart array?
   </details>
 
 * Adding a Cart view that is viewed when the user clicks on the Cart menu item.
@@ -36,13 +36,11 @@ listing so that the user is not confused.
 
   <details><summary>click for more tips</summary>
  
-  * Take a look at how the Browse view is configured. There is a menu item in App.vue. When this is clicked (router-link), it goes to router/index.js to find the matching path for "/browse" and is configured to use the Browse.vue component to handle that path. You need to do something similar for a Cart view. Here are the general steps if you get stuck:
-    1. Copy either Home.vue or Browse.vue to make Cart.vue. Modify it for the cart view including swapping the computed value to return the cart and the template to use a new component we will create in step 3 instead of the ProductList component.
-    2. Add the path for Cart.Vue in the router/index.js file using the other routes as examples. 
-    3. Copy the ProductList component to create a CartList component.  Be sure to change the loop to go through the cart instead of the products list.  
-    4. Change the addItem button and function to a removeItem button and function.  This can be done by using an [index in the v-for loop](https://vuejs.org/v2/guide/list.html) and passing it in to the function. Look up how to use the splice() function to remove objects from a list.
-    5. Add a v-if v-else to display a message when the cart is empty.
-    6. Change the styling for the CartList component to make it look different from the product listing.
+  * Take a look at how the Browse view is configured. There is a menu item in `App.vue`. When this is clicked (router-link), it goes to `router/index.js` to find the matching path for `/browse` and is configured to use the `Browse.vue` component to handle that path. You need to do something similar for a Cart view. 
+  * You can copy what is in Browse.vue and then modify it to work for `Cart.vue`.
+  * You can likewise copy and then modify a configuration for a view in `router/index.vue` so you can link a path to `Cart.vue`.
+  * In your cart view you need a list of items in the cart, similar to `ProductList`. You can create a similar `CartList` component.
+  * When removing items from the cart, you can use a button similar to the `Add to Cart` button, but change it so it instead removes items. In JavaScript, you can use the `splice()` method to remove items from an Array.
     </details>
 
 ## Extra Credit
