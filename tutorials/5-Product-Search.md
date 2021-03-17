@@ -4,7 +4,7 @@ Since the store may have a very large number of products, we're going to add a s
 function on the home page to narrow down the list of products. We're going to make
 this a "live" search so that the products are narrowed down as you type.
 
-First, edit `src/Home.vue` so that the template now has a search box:
+First, edit `src/views/Home.vue` so that the template now has a search box:
 
 ```
 <template>
