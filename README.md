@@ -4,10 +4,8 @@ In this assignment, you will use Vue to build the front end for a grocery store.
 
 ## Starting the lab
 
-To start the lab, you must follow this [GitHub Classroom
-link](https://classroom.github.com/a/Menmq_kw). This will create a
-private repository for you using our classroom site. We will only
-grade repositories created and submitted this way.
+To start the lab, you **must** follow the GitHub Classroom link in Canvas. If you got here some other way, go back to Canvas. Using the GitHub Classroom link will create a private repository for you using our classroom site. We will only grade repositories created and submitted this way.
+
 
 Once you "Accept the assignment" on GitHub Classroom, it will create a
 new repository for you and grant you access to it on GitHub. In order
