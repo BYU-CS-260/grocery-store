@@ -41,13 +41,4 @@ your DigitalOcean server.
 
 ## Rubric for Grading
 
-When we grade these labs, we will award points using the following
-rubric:
-
-Item | Points
---- | ---
-The material in the tutorial works | 70
-You can add items to the shopping cart and show the number of cart items in the menu | 10
-You can click on the cart menu and show a page with the items in the cart | 10
-You can remove items from the cart and show an empty cart message if there are no items | 10
-Extra credit -- your cart includes quantities, for example showing 5 lemons and 2 oranges | 10
+Please see Canvas for the rubric.
